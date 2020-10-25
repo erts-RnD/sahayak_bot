@@ -1,0 +1,1 @@
+ros_logs/task1_log/task1_result filter=lfs diff=lfs merge=lfs -text
