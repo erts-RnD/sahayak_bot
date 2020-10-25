@@ -1,0 +1,52 @@
+<launch>
+<!--   ebot -->
+    <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find ebot_description)/urdf/ebot.xacro'"/>
+   
+<!-- empty gazebo world -->
+   <include file="$(find ebot_gazebo)/launch/ebot_task1.launch" /> 
+
+<!--   office world -->
+   <!-- <include file="$(find ebot_gazebo)/launch/office_world.launch" />-->
+
+    <arg name="x" default="0"/>
+        <arg name="y" default="0"/>
+        <arg name="z" default="0"/>
+        
+
+        <!-- Spawn the robot model -->
+    <node name="mybot_spawn" pkg="gazebo_ros" type="spawn_model" output="screen" 
+        args="-urdf -param robot_description -model ebot -x $(arg x) -y $(arg y) -z $(arg z)" />
+
+        
+ <!--run controller node file-->
+
+  <node pkg="ebot_controller" name="controller" type="controller.py" > 
+  </node>
+
+
+
+<!--Uncomment these lines when you want to submit the task1-->
+
+
+<arg name="record" default="true"/>
+<arg name="duration" default="10"/>
+<arg name="rec_name" default="task1.bag"/>
+
+<group if="$(arg record)">
+
+    <node name="rosbag_record_task1" pkg="rosbag" type="record"
+       args="record -O $(find ros_logs)/task1_log/$(arg rec_name)  /odom " output="screen"/>
+
+</group>
+
+<arg name="ws"  /> 
+  <node pkg="ros_logs" type="auto_task1_log" name="auto_task1_log"  args="$(arg ws)" output="screen"/>
+
+
+
+
+
+
+  
+  
+</launch>
