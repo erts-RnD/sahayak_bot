@@ -11,7 +11,7 @@
 <!-- Spawning location -->
 	<arg name="x" default="0"/>
 	<arg name="y" default="0"/>
-	<arg name="z" default="0"/>			
+	<arg name="z" default="0.18"/>			
 
 <!-- Spawn the robot model -->
 	<node name="mybot_spawn" pkg="gazebo_ros" type="spawn_model" output="screen" args="-urdf -param robot_description -model ebot -x $(arg x) -y $(arg y) -z $(arg z)" />
@@ -22,10 +22,9 @@
 	</node>
 
 
-<!--Uncomment these lines when you want to submit the task1-->
+<!--Uncomment these lines when you want to submit bag file for task1-->
 <!-- 
 	<arg name="record" default="true"/>
-	<arg name="duration" default="10"/>
 	<arg name="rec_name" default="task1.bag"/>
 
 	<group if="$(arg record)">
