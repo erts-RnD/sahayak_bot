@@ -14,7 +14,7 @@
     name="ebot_base">
     <inertial>
       <origin
-        xyz="0 -0.027412 0.07138"
+   xyz="0 0.0 0.12"
         rpy="0 0 0" />
       <mass
         value="28" />
@@ -25,7 +25,7 @@
         iyy="0.03055"
         iyz="-4.0532E-05"
         izz="0.030588" /> -->
-         <inertia ixx="6.68333333333" ixy="0" ixz="0" iyy="1.9722" iyz="0" izz="2.65266666667"/>
+         <inertia ixx="0.356" ixy="0" ixz="0" iyy="0.9443" iyz="0" izz="1.008"/>
     </inertial>
     <visual>
       <origin
@@ -69,7 +69,7 @@
         iyy="0.0022215"
         iyz="3.3883E-09"
         izz="0.001221" /> -->
-          <inertia ixx="0.00285208333333" ixy="0" ixz="0" iyy="0.00285208333333" iyz="0" izz="0.005"/>
+          <inertia ixx="0.003" ixy="0" ixz="0" iyy="0.0030" iyz="0" izz="0.0035"/>
     </inertial>
     <visual>
       <origin
@@ -124,7 +124,7 @@
         iyy="0.0022215"
         iyz="3.3744E-09"
         izz="0.001221" /> -->
-          <inertia ixx="0.00285208333333" ixy="0" ixz="0" iyy="0.00285208333333" iyz="0" izz="0.005"/>
+           <inertia ixx="0.003" ixy="0" ixz="0" iyy="0.0030" iyz="0" izz="0.0035"/>
     </inertial>
     <visual>
       <origin
@@ -180,7 +180,7 @@
         iyy="0.0022215"
         iyz="3.3883E-09"
         izz="0.001221" /> -->
-          <inertia ixx="0.00285208333333" ixy="0" ixz="0" iyy="0.00285208333333" iyz="0" izz="0.005"/>
+           <inertia ixx="0.003" ixy="0" ixz="0" iyy="0.0030" iyz="0" izz="0.0035"/>
     </inertial>
     <visual>
       <origin
@@ -235,7 +235,7 @@
         iyy="0.0022215"
         iyz="3.3744E-09"
         izz="0.001221" /> -->
-          <inertia ixx="0.00285208333333" ixy="0" ixz="0" iyy="0.00285208333333" iyz="0" izz="0.005"/>
+        <inertia ixx="0.003" ixy="0" ixz="0" iyy="0.0030" iyz="0" izz="0.0035"/>
     </inertial>
     <visual>
       <origin
