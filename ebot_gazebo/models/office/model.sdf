@@ -7,7 +7,7 @@
         
         <geometry>
           <mesh>
-            <uri>model://office/meshes/office.dae</uri>
+            <uri>model://office/meshes/SB_fixed.obj</uri>
 	    
           </mesh>
         </geometry>
@@ -18,7 +18,7 @@
         <cast_shadows>true</cast_shadows>
         <geometry>
           <mesh>
-            <uri>model://office/meshes/office.dae</uri>
+            <uri>model://office/meshes/SB_fixed.obj</uri>
 	   
           </mesh>
         </geometry>

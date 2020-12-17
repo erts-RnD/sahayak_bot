@@ -26,10 +26,10 @@
 
 
       <collision name="glue_collision">
-        <pose>0 0 0.067 0 0 -0.95</pose>
+        <pose>0 0.001 0.067 0 0 -0.95</pose>
         <geometry>
           <box>
-            <size>0.054 0.032 0.133</size>
+            <size>0.06 0.032 0.133</size>
           </box>
         </geometry>
       </collision>
